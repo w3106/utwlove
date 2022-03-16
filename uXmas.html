@@ -1,0 +1,749 @@
+<!-- PC區塊_主視覺開始 -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta property="og:image" content="http://img.udn.com/art/20181201_mk_SP_04/images/s-1200X628.jpg"/>
+	<meta charset="UTF-8" />
+	<script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-text-size-adjust: none;
+			list-style: none;
+			outline: none; 
+		}
+		img { border: 0;}
+		html, body {
+			min-width: 0;/* 必寫!!!*/
+			height: auto;
+			background-image: url(http://img.udn.com/art/20181201_mk_SP_04/images/index_bg.jpg);/* 滿版主視覺背景 */
+			background-repeat: no-repeat;
+			background-position: center top;
+			/* background-position: center 182px; */
+			/* 套HEADER時需要打開 */
+		}
+
+		#snow-animation-container {
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			position: fixed;
+			pointer-events: none;
+      		  }
+
+		.vspc {
+			width: 1190px;
+			height: auto;
+			margin: 0 auto;
+			position: relative;
+			}
+		.vspc img { display: block;}
+
+		.vspc .bigbang {
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 50px;
+		z-index: 700;
+	}
+
+		.vspc .bigbang img {
+		width: 60%;
+	}
+
+        .vspc .bigbang-LINE {
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 100px;
+		z-index: 700;
+	}
+
+		.vspc .bigbang-LINE img {
+		width: 80%;
+	}
+
+        .vspc .bigbang-FB {
+		display: block;
+		position: absolute;
+		top: 15px;
+		right: 50px;
+		z-index: 700;
+	}
+
+		.vspc .bigbang-FB img {
+		width: 80%;
+	}
+
+		.vspc .member01{
+			position: absolute;
+			top:760px;
+			left:90px;
+			z-index: 100;	
+		}
+
+		.vspc .gift01{
+			position: absolute;
+			top:747px;
+			right:60px;
+			z-index: 100;	
+		}
+
+		
+
+
+		.vspc .member-01{
+			position: absolute;
+			top:1090px;
+			left:90px;	
+			z-index: 100;	
+		}
+
+		.vspc .gif001{
+			position: absolute;
+			top:1090px;
+			left:305px;	
+			z-index: 100;	
+		}
+
+		.vspc .gif002{
+			position: absolute;
+			top:1090px;
+			right:190px;	
+			z-index: 100;	
+		}
+
+		.vspc .PUSH01{
+			position: absolute;
+			top:490px;
+			right:430px;	
+			z-index: 100;	
+			animation:PUSH01 1s infinite;
+		}		
+	
+		@keyframes PUSH01{
+			0%{transform: translateY(-10px);}
+			50%{transform: translateY(0px);}
+			100%{transform: translateY(-10px);}
+		}
+
+
+		@media screen and (max-width: 640px) {
+			.vspc { display: none;}
+
+      		  }
+
+
+	</style>
+	<script src="http://img.udn.com/art/js_temp/eplogo.js"></script>
+
+
+	<div class="vspc">
+		<img src="http://img.udn.com/art/20181201_mk_SP_04/images/index_02.jpg" style="display:block;" border="0" hidefocus="true">
+		<img src="http://img.udn.com/art/20181201_mk_SP_04/images/index_05.jpg" style="display:block;" border="0" hidefocus="true">
+		<span class="bigbang">
+			<a href="https://shopping.udn.com/mall/Cc1a00.do">
+				<img src="http://img.udn.com/art/2018_0604_line3/images/udnshopping_logo_w.svg">
+			</a>
+		</span><!-- 視覺左上角活動LOGO預留位置_誤刪 -->
+
+		<span class="bigbang-LINE">
+			<a href="javascript: void(window.open('https://lineit.line.me/share/ui?url=' .concat(encodeURIComponent(&quot;http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&amp;UrlRefXuid=201802012nLAxoOUwjB&quot;)) ));" target="_blank">
+				<img src="http://img.udn.com/art/20181201_mk_SP_04/images/LINE.png">
+			</a>
+		</span>
+		<span class="bigbang-FB">
+			<a href="https://www.facebook.com/sharer/sharer.php?u=http://shopping.udn.com/mall/cus/event/eventPage.do?header=false%26UrlRefXuid=201802012nLAxoOUwjB">
+				<img src="http://img.udn.com/art/20181201_mk_SP_04/images/FB.png">
+			</a>
+		</span>
+
+
+		<div class="member01"><img src="http://img.udn.com/art/20181201_mk_SP_04/images/member-world.png" >
+		</div>
+
+		<div class="gift01"><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812015aC1ovqCl0h">
+			<img src="http://img.udn.com/art/20181201_mk_SP_04/images/gift-world.png" ></a>
+		</div>
+		
+		<div class="member-01">
+				<a href="https://shopping.udn.com/mall/cus/meb/Cc1m01.do">
+				<img src="http://img.udn.com/art/20181201_mk_SP_04/images/member-1.png" 
+				onmouseover="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/member-2.png ';" 
+				onmouseout="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/member-1.png ';" width="203px;">
+				</a>
+		</div>
+
+	    <div class="gif001"><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=201911012IxngW3yoEI">
+			<img src="http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png" 
+			onmouseover="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-2.png ';" 
+			onmouseout="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png ';" width="203px;">
+			</a>
+		</div>
+
+		<div class="gif002"><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812015aC1ovqCl0h">
+			<img src="http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png" 
+			onmouseover="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-2.png ';" 
+			onmouseout="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png ';" width="203px;">
+			</a>
+		</div>
+
+		<div class="PUSH01"><a href="https://shopping.udn.com/mall/cus/meb/Cc1m01.do">
+			<img src="http://img.udn.com/art/20181201_mk_SP_04/images/PUSH.png" ></a>
+		</div>
+
+	</div>
+	
+	
+
+
+
+<!-- PC區塊_主視覺結束 -->
+
+
+
+
+<!-- MOBILE區塊_主視覺開始 -->
+	<style>
+		.vsmobile {
+			max-width: 640px;
+			margin: 0 auto;
+			display: none;
+		}
+		
+		.vsmobile img {
+			max-width: 100%;
+			height: auto;
+			display: block;}
+		@media screen and (max-width: 640px) {
+			.vsmobile { display: block;}
+		}
+
+		.vsmobile .bigbang {
+		display: block;
+		position: absolute;
+		width: 30%;
+		top: 3%;
+		left: 3%;
+		z-index: 100;	
+	}
+
+		.Footer01 {
+		display: block;
+		position: relative;
+		max-width: 640px;
+		margin: 0 ;
+		}
+
+		.memberrr01 {
+		display: block;
+		position: relative;
+		max-width: 640px;
+		margin: 0 ;
+		}
+
+		.gifttt01 {
+		display: block;
+		position: relative;
+		max-width: 640px;
+		margin: 0 ;
+		}
+
+		.indexxx01 {
+		display: block;
+		position: relative;
+		max-width: 640px;
+		margin: 0 ;
+		}
+
+		.vsmobile  .fooooott01{
+			display: block;
+			position: absolute;
+			top: 0px;
+			margin: 0 auto ;
+		}
+
+        .vsmobile  .bigbang-LINE {
+			display: block;
+			position: relative;
+			float:right;
+			width: 50%;
+			top: 3%;
+			z-index: 100;	
+	}
+
+
+
+        .vsmobile  .bigbang-FB {
+			display: block;
+			position: relative;
+			float:left;
+			width: 50%;
+			top: 3%;
+			z-index: 100;	
+	}
+
+
+		.vsmobile  .member01{
+			display: block;
+			position: absolute;
+			width: 70%;
+			top: 20%;
+			left: 16%;
+			z-index: 100;	
+		}
+
+		.vsmobile  .gift01{
+			display: block;
+			position: absolute;
+			width: 75%;
+			top: 22%;
+			left: 16%;
+			z-index: 100;	
+		}
+
+		
+
+
+		.vsmobile  .member-01{
+			display: block;
+			position: absolute;
+			width: 33.3%;
+			top: 71%;
+			left: 16%;
+			z-index: 100;	
+		}
+
+		.vsmobile  .gif001{
+			display: block;
+			position: absolute;
+			width: 33.3%;
+			top: 71%;
+			right: 16%;
+			z-index: 100;	
+		}
+
+		.vsmobile  .gif002{
+			display: block;
+			position: absolute;
+			width: 33.3%;
+			top: 81%;
+			right: 35%;
+			z-index: 100;	
+		}
+
+
+		.vsmobile  .PUSH01{
+			display: block;
+			position: absolute;
+			width: 43%;
+			bottom: -3%;
+			left: 16%;
+			z-index: 100;		
+			animation:PUSH01 1s infinite;
+		}
+
+		@keyframes PUSH01{
+			0%{transform: translateY(-2%);}
+			50%{transform: translateY(0px);}
+			100%{transform: translateY(-2%);}
+		}
+
+
+	</style>
+
+	<!-- <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script> -->
+
+	<div class="vsmobile">
+
+		<div class="indexxx01">
+		<img src="http://img.udn.com/art/20181201_mk_SP_04/images/640_01.jpg" style="display:block;" border="0" hidefocus="true">		
+		<div class="PUSH01"><a href="https://shopping.udn.com/mall/cus/meb/Cc1m01.do">
+			<img src="http://img.udn.com/art/20181201_mk_SP_04/images/PUSH.png" ></a>
+		</div>
+		<span class="bigbang">
+				<a href="https://shopping.udn.com/mall/Cc1a00.do">
+					<img src="http://img.udn.com/art/2018_0604_line3/images/udnshopping_logo_w.svg">
+				</a>
+			</span><!-- 視覺左上角活動LOGO預留位置_誤刪 -->
+		</div>
+
+		<div class="memberrr01"><img src="http://img.udn.com/art/20181201_mk_SP_04/images/640_02.jpg" style="display:block;" border="0" hidefocus="true">
+			<div class="member01"><img src="http://img.udn.com/art/20181201_mk_SP_04/images/member-world.png" ></div>
+			<div class="member-01">
+					<a href="https://shopping.udn.com/mall/cus/meb/Cc1m01.do">
+					<img src="http://img.udn.com/art/20181201_mk_SP_04/images/member-1.png" 
+					onmouseover="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/member-2.png ';" 
+					onmouseout="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/member-1.png ';" width="203px;">
+					</a>
+			</div>
+	
+			<div class="gif001"><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=201911012IxngW3yoEI">
+				<img src="http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png" 
+				onmouseover="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-2.png ';" 
+				onmouseout="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png ';" width="203px;">
+				</a>
+			</div>
+		</div>
+
+		<div class="gifttt01">
+		<img src="http://img.udn.com/art/20181201_mk_SP_04/images/640_03.jpg" style="display:block;" border="0" hidefocus="true">
+			<div class="gift01"><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812015aC1ovqCl0h">
+				<img src="http://img.udn.com/art/20181201_mk_SP_04/images/gift-world.png" ></a>
+			</div>
+			<div class="gif002"><a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812015aC1ovqCl0h">
+				<img src="http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png" 
+				onmouseover="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-2.png ';" 
+				onmouseout="this.src=' http://img.udn.com/art/20181201_mk_SP_04/images/gif-1.png ';" width="203px;">
+				</a>
+			</div>
+		</div>
+		<div class="Footer01"><img src="http://img.udn.com/art/20181201_mk_SP_04/images/640_04.jpg" style="display:block;" border="0" hidefocus="true">
+			<div class="fooooott01">
+				<span class="bigbang-FB">
+						<a href="https://www.facebook.com/sharer/sharer.php?u=http://shopping.udn.com/mall/cus/event/eventPage.do?header=false%26UrlRefXuid=201802012nLAxoOUwjB">
+							<img src="http://img.udn.com/art/20181201_mk_SP_04/images/FB-640.png">
+						</a>
+				</span>
+				<span class="bigbang-LINE">
+					<a href="javascript: void(window.open('https://lineit.line.me/share/ui?url=' .concat(encodeURIComponent(&quot;http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&amp;UrlRefXuid=201802012nLAxoOUwjB&quot;)) ));" target="_blank">
+						<img src="http://img.udn.com/art/20181201_mk_SP_04/images/LINE-640.png" border="0">
+					</a>
+				</span>
+
+	    	</div>
+		</div>
+		
+	</div>
+	<div id="snow-animation-container"></div>
+<!-- MOBILE區塊_主視覺結束 -->
+
+
+<!-- PC區塊_側欄開始 -->
+<style>
+
+		.sbar *{
+			margin: 0;
+			padding: 0;
+			-webkit-text-size-adjust: none;
+			list-style: none;
+		}
+	
+	
+		.sbar {
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			font-family: "Century Gothic", "Microsoft JhengHei", 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', sans-serif;
+			text-align: center;
+			position: fixed;
+			z-index: 999;
+			overflow: hidden;
+			width: 160px;
+			/* PC區塊側欄_寬，依圖寬填入 */
+			height: 500px;
+			/* PC區塊側欄_高,依圖高填入 */
+			top: 70px;
+			/* PC區塊側欄_離上方距離 */
+			right: 0px;
+			/* PC區塊側欄_離右方距離 */
+			transition: all .3s;
+			/* top: 150px; */
+			/* 套HEADER時需要打開 */
+		}
+	
+		.sbar>ul {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+	
+		.sbar>ul>li {
+			display: block;
+			position: absolute;
+		}
+	
+		.sbar>ul>li.sright {
+			width: 100%;
+			height: 100%;
+			/* background: red;*/
+		}
+	
+		.sbar>ul>li.sleft {
+			width: 30px;
+			height: 100%;
+			cursor: pointer;
+			background: url(http://img.udn.com/art/20181201_mk_SP_02/images/pc_right_bar.png) left top no-repeat;
+		}
+	
+		.sbarright {
+			right: -130px;
+		}
+	
+		.sbartop {
+			top: 70px;
+		}
+	
+		@media screen and (max-width: 640px) {
+			.sbar {
+				display: none;
+			}
+		}
+	</style>
+	<script>
+		$(function () {
+			var WW = $(window).width();
+			if (WW < 1510) {
+				$(".sbar").addClass("sbarright");
+			} else {
+				$(".sbar").removeClass("sbarright");
+			}
+			$(".sleft").click(function () {
+				$(".sbar").toggleClass('sbarright');;
+			});
+			$(window).resize(function () {
+				var WW = $(window).width();
+				if (WW < 1510) {
+					$(".sbar").addClass("sbarright");
+				} else {
+					$(".sbar").removeClass("sbarright");
+				}
+			});
+			$(window).scroll(function () {
+				var HH = $(window).scrollTop();
+				if (HH > 80) {
+					$(".sbar").addClass("sbartop");
+				} else {
+					$(".sbar").removeClass("sbartop");
+				}
+			});
+			$("#backtop").click(function () {
+				// $(window).scrollTop(0);
+				$("html,body").animate({
+					scrollTop: 0
+				}, 800);
+			});
+		});
+	</script>
+	<div class="sbar">
+		<ul>
+			<li class="sright"><img src="http://img.udn.com/art/20181201_mk_SP_02/images/pc_right_bar.png" alt="" usemap="#Map111">
+				<map name="Map111">
+					<area shape="circle" coords="94,67,59" href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=299810013M5N36jjFZM" target="_blank">
+					<area shape="rect" coords="36,170,151,200" href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=202810151Cc9OjEo1hC" target="_blank">
+					<area shape="rect" coords="35,208,152,241" href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812011fAUef3xlxB" target="_blank">
+					<area shape="rect" coords="33,255,153,282" href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=221812071JJweIPfZl2" target="_blank">
+					<area shape="rect" coords="38,295,155,327" href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202703012sKNcKk1vPa" target="_blank">
+					<area shape="rect" coords="34,339,157,367" href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=201802012nLAxoOUwjB" target="_blank">
+					<area shape="rect" coords="41,378,148,406" href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=288808082rdbe7RicAb" target="_blank">
+					<area shape="rect" coords="55,411,137,446" href="javascript:void(0)" id="backtop">
+				</map>
+			</li>
+			<li class="sleft"></li>
+		</ul>
+	</div>
+	<!-- PC區塊_側欄結束 -->
+	
+	
+	
+	<!-- MOBILE區塊_下方選單開始 -->
+	<!--
+	<style>
+		.bbar {
+			display: none;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			position: fixed;
+			z-index: 999;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-image: url(http://img.udn.com/art/20181201_mk_SP_02/images/mobile_right_bar.png);
+			/* 選單背景圖 */
+			overflow: hidden;
+			width: 100vw;
+			height: calc(80vw / 640 * 100);
+			bottom: 0px;
+		}
+	
+		.bbar>a {
+			box-sizing: inherit;
+			-webkit-box-sizing: inherit;
+			text-decoration: none;
+			display: block;
+			float: left;
+			width: calc(100vw/4);
+			/* MO2BILE區塊下方選單_數量,有幾個就除幾個(目前6) */
+			height: 100%;
+		}
+	
+		@media screen and (max-width: 640px) {
+			.bbar {
+				display: block;
+			}
+		}
+	</style>
+	<div class="bbar">
+			<a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=202810151Cc9OjEo1hC"target="_blank"></a>
+			<a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202812011fAUef3xlxB"target="_blank"></a>
+			<a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=221812071JJweIPfZl2"target="_blank"></a>
+			<a href="http://shopping.udn.com/mall/cus/event/eventPage.do?header=true&UrlRefXuid=202703012sKNcKk1vPa"target="_blank"></a>
+		-->
+	
+		<!-- MOBILE區塊下方選單_數量,有幾個就開幾排<a>(目前6) -->
+<!--	</div>-->
+	<!-- MOBILE區塊_下方選單結束 -->
+
+
+<script>
+
+/*
+    Landed by Yasin Burak KALKAN
+    Yasin Burak Kalkan | Front-End Developer
+    www.yasinkalkan.com
+*/
+
+$(document).ready(documentReady);
+
+function documentReady()
+{
+	var MAX_SNOW 		= 200;
+
+	var MAX_SNOW_SIZE 	= 7;
+
+	var MAX_SNOW_SPEED 	= 1;
+
+	snowStart();
+
+	function snowStart() {
+
+		console.log("// Snow animation start");
+
+		createSnows();
+	}
+
+	function createSnows() {
+
+		var container = $("#snow-animation-container");
+
+		for (var i = 0; i < MAX_SNOW; i++) {
+
+			var appendItem	= getRandomItem(i);
+			container.append(appendItem);
+
+			var animateItem = $(".snow" + String(i));
+			var randomTime 	= Math.random() * MAX_SNOW_SPEED;
+			goAnimate(animateItem, i, randomTime);
+			goAnimate2(animateItem);
+		};
+
+		console.log("// Create snows");
+	}
+
+	function goAnimate(item, id, randomTime) {
+		TweenMax.to(item, randomTime, {css:{marginTop:"+=100"}, ease:Linear.easeNone, onComplete:function() { 
+
+			var topPosition = item.css("margin-top").replace("px","");
+
+			if (topPosition > $(window).height()) {
+				changePosition(item);
+				randomTime = Math.random() * MAX_SNOW_SPEED;
+				goAnimate(item, id, randomTime);
+			}
+			else {
+				goAnimate(item, id, randomTime);
+			}
+
+		}});
+	}
+
+	function goAnimate2(item) {
+
+		var directionTime 	= 1 + Math.floor( Math.random() * 5 );
+
+		var randomDirection = 1 + Math.floor( Math.random() * 4 );
+
+		var delayTime		= 1 + Math.floor( Math.random() * 3 );
+
+		if (randomDirection == 1){
+
+			TweenMax.to(item, directionTime, {css:{marginLeft:"+=100"}, ease:Linear.easeOut, onComplete:function() {
+
+				TweenMax.to(item, directionTime, {css:{marginLeft:"-=100"}, delay:delayTime, ease:Linear.easeOut, onComplete:function() { 
+
+					goAnimate2(item);
+
+				}});
+			}});
+		}
+		else if(randomDirection == 2)
+		{
+
+			TweenMax.to(item, directionTime, {css:{marginLeft:"-=100"}, ease:Linear.easeOut, onComplete:function() { 
+
+				TweenMax.to(item, directionTime, {css:{marginLeft:"+=100"}, delay:delayTime, ease:Linear.easeOut, onComplete:function() { 
+
+					goAnimate2(item);
+
+				}});
+			}});
+		}
+		else if(randomDirection == 3)
+		{
+
+			TweenMax.to(item, directionTime, {css:{marginLeft:"+=100"}, ease:Linear.easeOut, onComplete:function() { 
+
+				goAnimate2(item);
+
+			}});
+		}
+		else if(randomDirection == 4)
+		{
+
+			TweenMax.to(item, directionTime, {css:{marginLeft:"-=100"}, ease:Linear.easeOut, onComplete:function() { 
+
+				goAnimate2(item);
+
+			}});
+		}
+	}
+
+	function changePosition(item) {
+		var _width 	= Math.floor( Math.random() * MAX_SNOW_SIZE );
+		var _height = _width;
+		var _blur 	= Math.floor( Math.random() * 5+2 );
+		var _left 	= Math.floor( Math.random() * ($(window).width() - _width) );
+		var _top 	= -$(window).height() + Math.floor( Math.random() * ($(window).height() - _height) );
+
+		item.css("width", _width);
+		item.css("height", _height);
+		item.css("margin-left", _left);
+		item.css("margin-top", _top);
+		item.css("-webkit-filter", "blur(" + String(_blur) + "px)");
+		item.css("-moz-filter", "blur(" + String(_blur) + "px)");
+		item.css("-o-filter", "blur(" + String(_blur) + "px)");
+		item.css("-ms-filter", "blur(" + String(_blur) + "px)");
+		item.css("filter", "blur(" + String(_blur) + "px)");
+	}
+
+	function getRandomItem(id) {
+		var _width 	= Math.floor( Math.random() * MAX_SNOW_SIZE );
+		var _height = _width;
+		var _blur 	= Math.floor( Math.random() * 5+2 );
+		var _left 	= Math.floor( Math.random() * ($(window).width() - _width) );
+		var _top 	= -$(window).height() + Math.floor( Math.random() * ($(window).height() - _height) );
+		var _id 	= id;
+
+		return getSmallSnow(_width, _height, _blur, _left, _top, _id);
+	}
+
+	function getSmallSnow(width, height, blur, left, top, id) {
+
+		var item = "<div class='snow" + id + "' style='position:absolute; margin-left: " + left + "px; margin-top: " + top + "px; width: " + width + "px; height: " + height + "px; border-radius: 50%; background-color: white; -webkit-filter: blur(" + blur +"px); -moz-filter: blur(" + blur + "px); -o-filter: blur(" + blur + "px); -ms-filter: blur(" + blur + "px); filter: blur(" + blur + "px);'></div>"
+
+		return item;
+	}
+
+
+}
+
+</script>
